@@ -1,1 +1,34 @@
-<p>how-to-play works!</p>
+<div class="how-to-play-container" [class.open]="isOpen">
+    <div class="how-to-play-header" (click)="toggleOpen()">
+      <span class="how-to-play-header-text">How to Play</span>
+      <i class="fas" [ngClass]="{'fa-chevron-down': !isOpen, 'fa-chevron-up': isOpen}"></i>
+    </div>
+    <div class="how-to-play-content" *ngIf="isOpen">
+      <div class="step">
+        <div class="step-circle">1</div>
+        <div class="step-text">
+          <span class="step-heading">Peel Off the Box</span>
+          <p>For a chance to win prizes.</p>
+        </div>
+        <img src="assets/images/HowToPlay/step1.png" alt="Peel Off the Box" class="step-image-1">
+      </div>
+      <div class="step">
+        <div class="step-circle">2</div>
+        <div class="step-text">
+          <span class="step-heading">Scan Code in App</span>
+          <p>To claim prizes.</p>
+        </div>
+        <img src="assets/images/HowToPlay/step2.png" alt="Scan Code in App" class="step-image-2">
+      </div>
+      <div class="step-bottom">
+        <div class="step-circle">3</div>
+        <div class="step-text">
+          <span class="step-heading">Then Peel in App</span>
+          <p>For a chance to play for additional prizes!</p>
+          <img src="assets/icons/slogan-cash-prize.svg" alt="Cash Prize Slogan" class="cash-prize-slogan">
+        </div>
+        <img src="assets/images/HowToPlay/pops.png" alt="Pops" class="pops-image">
+
+      </div>
+    </div>
+  </div>

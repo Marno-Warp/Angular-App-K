@@ -1,0 +1,133 @@
+.how-to-play-container {
+    width: 313px;
+    border-radius: 15px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    overflow: visible;
+  }
+  
+  .how-to-play-header {
+    width: 314px;
+    height: 55px;
+    border-radius: 15px;
+    background: linear-gradient(86.85deg, #FEF0A4 1.57%, #FEF0A4 14.83%, #FDD652 25.64%, #FCBA20 39.39%, #FCBA20 48.22%, #FDD652 59.52%, #FEF0A4 74.25%, #FEF0A4 83.15%, #FDD652 95.77%);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .how-to-play-header-text {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    padding-left: 20px;
+  }
+  
+  .fas {
+    padding-right: 25px;
+    font-size: 22px; 
+    font-weight: bold;
+  }
+  
+  .how-to-play-content {
+    padding: 5px;
+  }
+  
+  .step {
+    display: flex;
+    align-items: flex-start;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #0000001A;
+    
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .step-bottom {
+    display: flex;
+    align-items: flex-start;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+  }
+  
+  .step-circle {
+    width: 29px;
+    height: 29px;
+    background: #D01F3C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    margin-right: 6px;
+  }
+  
+  .step-text {
+    flex: 1;
+  }
+  
+  .step-heading {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    white-space: nowrap;
+  }
+  
+  .step-text p {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    padding-top: 5px;
+    text-wrap-style: balance;
+  }
+  
+  .step-image {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .step-image-1 {
+    height: 104px;
+  }
+
+  .step-image-2 {
+    height: 82px;
+  }
+
+  .pops-image{
+    width: 125px;
+    position: relative;
+    top: -20px;
+    left: 35px;
+  }
+
+  .cash-prize-slogan {
+    top: 16px;
+    left: 31px;
+    position: relative;
+  }
+  
