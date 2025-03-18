@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px;
+    position: relative;
+  }
+  
+  .menu-button {
+    width: 32px;
+    height: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 16px;
+  }
+  
+  .bar {
+    width: 28px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 1.5px;
+  }
+  
+  .menu-text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    color: #000000;
+    margin-top: 3px;
+    letter-spacing: 0px;
+  }
