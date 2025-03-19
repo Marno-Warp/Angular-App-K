@@ -1,0 +1,93 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .cash-prize-play-slogan {
+    position: relative;
+    width: 256.18px;
+    z-index: 1;
+    top: -150px;
+  }
+  
+  .tiger-image {
+    position: absolute;
+    width: 254px;
+    height: 281px;
+    z-index: 1;
+    top: 166px;
+  }
+  
+  .squares-bottom {
+    width: 1037px;
+    position: absolute;
+    top: 244px;
+  }
+  
+  .money-bill {
+    position: absolute;
+  }
+  
+  .money-bill-1 {
+    width: 74px;
+    height: 80px;
+    top: 32px;
+    left: 17px;
+    transform: rotate(-80.93deg);
+  }
+  
+  .money-bill-2 {
+    width: 60px;
+    height: 65px;
+    top: 179px;
+    left: -13px;
+    transform: rotate(-67.13deg);
+  }
+  
+  .money-bill-3 {
+    width: 72px;
+    height: 65px;
+    left: 6px;
+    top: 227px;
+    transform: rotate(19.91deg);
+    z-index: 2;
+  }
+  
+  .money-bill-4 {
+    width: 64px;
+    height: 44px;
+    top: 331px;
+    left: -26px;
+    transform: rotate(-7.19deg);
+    z-index: 1;
+  }
+  
+  .money-bill-5 {
+    width: 82px;
+    height: 74px;
+    left: 85%;
+    top: 35%;
+    transform: rotate(88.03deg);
+  }
+
+  .money-bill-6 {
+    width: 59px;
+    height: 54px;
+    left: 90%;
+    top: 59%;
+    transform: rotate(19.91deg);
+  }
+
+  .money-bill-7 {
+    width: 60px;
+    height: 65px;
+    left: 74%;
+    top: 69%;
+    transform: rotate(-76.53deg);
+  }
