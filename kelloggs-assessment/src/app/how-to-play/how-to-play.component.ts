@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './how-to-play.component.scss'
 })
 export class HowToPlayComponent {
-  isOpen = false;
+  isOpen = true;
 
   toggleOpen() {
     this.isOpen = !this.isOpen;
