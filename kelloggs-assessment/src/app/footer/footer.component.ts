@@ -9,7 +9,9 @@ export class FooterComponent implements AfterViewInit {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   ngAfterViewInit() {
-    const elements = this.el.nativeElement.querySelectorAll('.tiger-image, .cash-prize-play-slogan');
+    const elements = this.el.nativeElement.querySelectorAll(
+      '.tiger-image, .cash-prize-play-slogan, .money-bill'
+    );
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
