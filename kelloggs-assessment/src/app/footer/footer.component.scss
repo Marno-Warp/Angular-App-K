@@ -14,7 +14,10 @@ footer {
     width: 256.18px;
     z-index: 1;
     top: -150px;
+    opacity: 0;
+    animation: none;
   }
+  
   
   .tiger-image {
     position: absolute;
@@ -22,7 +25,11 @@ footer {
     height: 281px;
     z-index: 1;
     top: 166px;
+    animation: none;
+    opacity: 0;
   }
+  
+
   
   .squares-bottom {
     width: 1037px;
@@ -91,3 +98,41 @@ footer {
     top: 69%;
     transform: rotate(-76.53deg);
   }
+
+
+
+.cash-prize-play-slogan.on-screen {
+  animation: popIn 1s ease-out forwards;
+  animation-delay: 1.6s; 
+}
+
+.tiger-image.on-screen {
+  animation: slideInFromBottom 0.5s ease-out forwards;
+  animation-delay: 0.2s; 
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
