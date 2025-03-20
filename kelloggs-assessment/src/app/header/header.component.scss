@@ -62,6 +62,8 @@ header {
   left: -38px;
   transform: rotate(-14.48deg);
   animation: slideRotateIn 0.8s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.8s;
 }
 
 @keyframes popIn {
@@ -82,9 +84,24 @@ header {
 @keyframes slideRotateIn {
   0% {
     transform: translateX(-100%) rotate(-90deg);
+    opacity: 1;
   }
   100% {
     transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes throwIn {
+  0% {
+    transform: translateX(100%) translateY(100%) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(var(--sway-x)) translateY(var(--sway-y)) rotate(var(--rotate-mid));
+    opacity: 1;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -104,30 +121,31 @@ header {
   opacity: 0;
   animation: popIn 0.6s ease-out 0.8s forwards;
   transform-origin: center;
+  animation-delay: 1.5s;
 }
 
 .button-claim-prize {
   position: absolute;
-  top: 265px;
+  top: 284px;
   width: 193px;
   height: 50px;
   border-radius: 25px;
-  background: #D01F3C;
+  padding: 0; 
+  background: #D01F3C; 
   border: 4px solid transparent;
-  background-image: linear-gradient(#D01F3C, #D01F3C), linear-gradient(90deg, #DE9B00 -2.85%, #FDBB20 13.21%, #FFE7AF 21.24%, #FDBB20 29.27%, #DE9B00 49.48%, #F0C561 73.06%, #FFE7AF 78.54%, #F2D082 84.88%, #D29810 100.74%);
-  background-origin: border-box;
+  background-image: linear-gradient(#D01F3C, #D01F3C), linear-gradient(90deg, #DE9B00 -2.85%, #FDBB20 13.21%, #FFE7AF 21.24%, #FDBB20 29.27%, #DE9B00 49.48%, #F0C561 73.06%, #FFE7AF 78.54%, #F2D082 84.88%, #D29810 100.74%);background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 0px -6px 7.2px 0px #0000004D inset, 0px 12px 7.2px 0px #FFFFFF4D inset;
-  font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
   text-align: center;
   color: #FFFFFF;
-  opacity: 0;
   animation: popIn 0.6s ease-out 1s forwards;
   transform-origin: center;
+  animation-delay: 2s;
+  opacity: 0;
 }
 
 .squares-top {
@@ -142,6 +160,9 @@ header {
 
 .money-bill {
   position: absolute;
+  animation: throwIn 1.5s ease-out forwards;
+  animation-delay: var(--delay);
+  opacity: 0;
 }
 
 .money-bill-1 {
@@ -150,6 +171,11 @@ header {
   top: 22px;
   left: -33px;
   transform: rotate(-71.44deg);
+  --rotate-end: 360deg; 
+  --rotate-mid: 720deg; 
+  --sway-x: -12px;
+  --sway-y: -37px;
+  --delay: 0.2s;
 }
 
 .money-bill-2 {
@@ -158,6 +184,11 @@ header {
   top: 9%;
   left: 84%;
   transform: rotate(158.03deg);
+  --rotate-end: 360deg;
+  --rotate-mid: 720deg; 
+  --sway-x: -25px;
+  --sway-y: -50px;
+  --delay: 0.2s;
 }
 
 .money-bill-3 {
@@ -166,6 +197,11 @@ header {
   top: 26%;
   left: 82%;
   transform: rotate(-11.25deg);
+  --rotate-end: 360deg; 
+  --rotate-mid: 720deg; 
+  --sway-x: -20px;
+  --sway-y: -45px;
+  --delay: 0.5s;
 }
 
 .money-bill-4 {
@@ -174,6 +210,11 @@ header {
   top: 71%;
   left: 80%;
   transform: rotate(5.47deg);
+  --rotate-end: 360deg; 
+  --rotate-mid: 720deg; 
+  --sway-x: -15px;
+  --sway-y: -42px;
+  --delay: 0.2s;
 }
 
 .money-bill-5 {
@@ -182,4 +223,9 @@ header {
   top: 433.05px;
   left: -26.12px;
   transform: rotate(-53.23deg);
+  --rotate-end: 360deg; 
+  --rotate-mid: 720deg; 
+  --sway-x: -18px;
+  --sway-y: -40px;
+  --delay: 0.5s;
 }
